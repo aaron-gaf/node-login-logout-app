@@ -1,0 +1,22 @@
+doctype html
+html(lang='EN')
+  head
+    title Log In
+    link(rel='stylesheet', href='stylesheets/signup_login.css')
+    link(rel='stylesheet', href='stylesheets/normalize.css')
+    link(rel='stylesheet', href='stylesheets/skeleton.css')
+  body
+    .container.centered
+      form(name="login", method="post", action="/login")
+        .row
+          header
+            h1 Log In
+        .row
+          div
+            label(for='usernameOrEmail') Username or Email
+            input#usernameOrEmail.u-full-width(type='text', name='usernameOrEmail', required='')
+        .row
+          div
+            label(for='password') Password
+            input#password.u-full-width(type='password', name='password', required='')
+        input.button-primary.u-full-width(type='submit', value='Log In')

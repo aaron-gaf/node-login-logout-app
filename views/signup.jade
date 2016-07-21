@@ -1,0 +1,32 @@
+doctype html
+html(lang='EN')
+  head
+    title Sign Up
+    link(rel='stylesheet', href='stylesheets/signup_login.css')
+    link(rel='stylesheet', href='stylesheets/normalize.css')
+    link(rel='stylesheet', href='stylesheets/skeleton.css')
+  body
+    .container.centered
+      form#addUserForm(name="adduser", method="post", action="/adduser")
+        .row
+          header
+            h1 Sign Up
+        .row
+          div
+            label(for='username') Username
+            input#username.u-full-width(type='text', placeholder='username', name='username', required='')
+        .row
+          div
+            label(for='email') Email
+            input#email.u-full-width(type='email', placeholder='email@email.com', name='email', required='')
+        .row
+          div
+            label(for='password') Password
+            input#password.u-full-width(type='password', name='password', required='')
+        .row
+          div
+            label(for='passwordConfirmation') Password Confirmation
+            input#passwordConfirmation.u-full-width(type='password', required='')
+        input.button-primary.u-full-width(type='submit', value='Sign Up')
+    script(src='javascripts/jquery.js')
+    script(src='javascripts/signup.js')

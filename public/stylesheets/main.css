@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+}
+.button.button-primary {
+    font-size: 38px;
+}
+#red {
+    background-color: red !important;
+    border-color: red !important;
+    font-size: 38px !important;
+}
+#hidden {
+    display: none;
+}

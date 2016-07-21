@@ -1,0 +1,10 @@
+.centered {
+    width: 40% !important;
+}
+h1 {
+    text-align: center;
+}
+/* Override some Skeleton CSS */
+.container .button-primary {
+    font-size: 38px;
+}

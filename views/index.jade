@@ -1,0 +1,27 @@
+doctype html
+html(lang='EN')
+  head
+    title Home
+    link(rel='stylesheet', href='stylesheets/main.css')
+    link(rel='stylesheet', href='stylesheets/normalize.css')
+    link(rel='stylesheet', href='stylesheets/skeleton.css')
+  body
+    .container
+      .row
+        header
+          h1 Home
+      .row
+      center
+        p#homeContent
+          strong Welcome!
+          br
+          |  If you don't have an account, sign up!
+          br
+          |  Otherwise, you can log in.
+        p
+      .row.option#optionsRow
+        a.button.button-primary.one-half.column(href='/signup') Sign Up
+        a.button.button-primary.one-half.column(href='/loginpage') Log In
+    script(src='javascripts/jquery.js')
+    script(src='javascripts/cookiemanager.js')
+    script(src='javascripts/main.js')

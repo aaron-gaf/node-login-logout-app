@@ -1,0 +1,22 @@
+doctype html
+html(lang='EN')
+  head
+    title Delete Account
+    link(rel='stylesheet', href='stylesheets/main.css')
+    link(rel='stylesheet', href='stylesheets/normalize.css')
+    link(rel='stylesheet', href='stylesheets/skeleton.css')
+  body
+    .container.centered
+      form(name="deleteaccount", method="post", action="/deleteaccount")
+        .row
+          header
+            h1 Confirm Account Deletion
+        .row
+          div
+            label(for='username') Username
+            input#usernameOrEmail.u-full-width(type='text', name='username', required='')
+        .row
+          div
+            label(for='password') Password
+            input#password.u-full-width(type='password', name='password', required='')
+        input#red.button-primary.u-full-width(type='submit', value='Delete Account')
